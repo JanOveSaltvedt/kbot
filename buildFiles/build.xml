@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<project name="KBot PRO" default="AfterCompile">
+    <property name="major" value="0"/>
+    <property name="minor" value="01"/>
+
+    <target  name="BeforeCompile">
+        <propertyfile file="build.properties">
+            <entry key="build.number" type="int" operation="+" default="0"/>
+        </propertyfile>
+        <property file="build.properties"/>
+        <replaceregexp file="../src/com/kbotpro/Version.java" match="build=\&quot;[a-zA-Z0-9@]+\&quot;;" replace="build=&quot;${build.number}&quot;;" byline="true"/>
+        <replaceregexp file="../src/com/kbotpro/Version.java" match="majorVersion=\&quot;[a-zA-Z0-9@]+\&quot;;" replace="majorVersion=&quot;${major}&quot;;" byline="true"/>
+        <replaceregexp file="../src/com/kbotpro/Version.java" match="minorVersion=\&quot;[a-zA-Z0-9@]+\&quot;;" replace="minorVersion=&quot;${minor}&quot;;" byline="true"/>
+    </target>
+    <target name="AfterCompile">
+        <property file="build.properties"/>
+        <jar destfile="../bin/KBot-PRO-${major}.${minor}-B${build.number}.jar">
+            <zipfileset dir="../out\production\KBot PRO" prefix=""/>
+            <zipfileset src="../lib/swing-layout.jar"/>
+            <zipfileset src="../lib/commons-lang-2.4.jar"/>
+            <zipfileset src="../lib/jdom.jar"/>
+            <zipfileset src="../lib/gnu-crypto.jar"/>
+            <zipfileset src="../lib/javax-crypto.jar"/>
+            <zipfileset src="../lib/javax-security.jar"/>
+            <zipfileset src="../lib/commons-codec-1.4.jar"/>
+
+            <zipfileset src="../lib/log4j-1.2.14.jar"/>
+            <zipfileset src="../lib/slf4j-api-1.5.10.jar"/>
+            <zipfileset src="../lib/slf4j-log4j12-1.5.10.jar"/>
+            
+            <manifest>
+                <attribute name="Main-Class" value="com.kbotpro.Start"/>
+                <attribute name="build" value="${build.number}"/>
+            </manifest>
+        </jar>
+        <jar destfile="../bin/KbotLatest.jar" duplicate="preserve">
+            <zipfileset dir="../out\production\KBot PRO" prefix=""/>
+            <zipfileset src="../lib/swing-layout.jar"/>
+            <zipfileset src="../lib/commons-lang-2.4.jar"/>
+            <zipfileset src="../lib/jdom.jar"/>
+            <zipfileset src="../lib/gnu-crypto.jar"/>
+            <zipfileset src="../lib/javax-crypto.jar"/>
+            <zipfileset src="../lib/javax-security.jar"/>
+            <zipfileset src="../lib/commons-codec-1.4.jar"/>
+
+            <zipfileset src="../lib/log4j-1.2.14.jar"/>
+            <zipfileset src="../lib/slf4j-api-1.5.10.jar"/>
+            <zipfileset src="../lib/slf4j-log4j12-1.5.10.jar"/>
+
+            <manifest>
+                <attribute name="Main-Class" value="com.kbotpro.Start"/>
+                <attribute name="build" value="${build.number}"/>
+            </manifest>
+
+        </jar>
+    </target>
+    <target name="obfuscate" depends="AfterCompile">
+            <property file="build.properties"/>
+            <taskdef name="allatori" classname="com.allatori.ant.ObfuscatorTask" classpath="../lib/allatori.jar"/>
+            <allatori config="config.xml"/>
+    </target>
+
+</project>

@@ -1,0 +1,153 @@
+<config>
+    <jars>
+        <jar in="../bin/KbotLatest.jar" out="../bin/KbotObf-B${build.number}.jar"/>
+    </jars>
+
+    <property name="default-package" value="obf"/>
+    <property name="force-default-package" value="enable"/>
+    <property name="methods-naming" value="keywords"/>
+    <property name="fields-naming" value="keywords"/>
+    <property name="string-encryption-type" value="strong"/>    
+
+
+    <keep-names>
+        <class template="class *.Start">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class *.Main" >
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface *.ClientCallback" >
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class *.BotEnvironment" >
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class com.kbotpro.scriptsystem.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface com.kbotpro.scriptsystem.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class com.kbotpro.hooks.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface com.kbotpro.hooks.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class org.bouncycastle.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface org.bouncycastle.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class org.jdesktop.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface org.jdesktop.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class org.jdom.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface org.jdom.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class org.apache.commons.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface org.apache.commons.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class org.jibbles.pircbot.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface org.jibbles.pircbot.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class org.apache.log4j.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface org.apache.log4j.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class org.slf4j.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface org.slf4j.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class com.kbot2.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface com.kbot2.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class java.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface java.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class netscape.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface netscape.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class gnu.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface gnu.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class javax.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface javax.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="class com.jtattoo.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+        <class template="interface com.jtattoo.*">
+            <field template="private+ *"/>
+            <method template="private+ *(**)"/>
+        </class>
+    </keep-names>
+
+    <property name="log-file" value="../logfiles/log-B${build.number}.xml"/>
+</config>

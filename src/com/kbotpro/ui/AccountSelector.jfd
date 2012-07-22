@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_17" class="java.beans.XMLDecoder"> 
+ <object class="com.jformdesigner.model.FormModel"> 
+  <void property="contentType"> 
+   <string>form/swing</string> 
+  </void> 
+  <void property="root"> 
+   <object class="com.jformdesigner.model.FormRoot"> 
+    <void method="add"> 
+     <object class="com.jformdesigner.model.FormWindow"> 
+      <string>javax.swing.JFrame</string> 
+      <object class="com.jformdesigner.model.FormLayoutManager"> 
+       <class>org.jdesktop.layout.GroupLayout</class> 
+       <void method="setProperty"> 
+        <string>$horizontalGroup</string> 
+        <string>par l {seq l {space :::p, par l {seq l {comp memberCheckBox:::p:108:p:1, space :::p}, seq l {par l {seq l {comp lampCheckBox:::p::p, space s:::p, comp lampCombo:::p:106:p:1}, seq l {comp pinCheckBox:::p::p, space u:::p, comp pinField::::104:x:1}, comp accountCombo::l::181:x:1}, space :p:328:p}}}, seq t {space :p:20:p, comp okButton::::77:x, space u:::p, comp cancelButton:::p::p, space :p:327:p}}</string> 
+       </void> 
+       <void method="setProperty"> 
+        <string>$verticalGroup</string> 
+        <string>par l {seq {space :::p, comp accountCombo:::p::p, space u:::p, par b {comp pinCheckBox::b:p::p, comp pinField::b:p::p}, space :::p, par b {comp lampCheckBox::b:p::p, comp lampCombo::b:p::p}, space :::p, comp memberCheckBox:::p::p, space u:::p, par b {comp okButton::b:p:36:p, comp cancelButton::b:p:36:p}, space :::x}}</string> 
+       </void> 
+      </object> 
+      <void method="setProperty"> 
+       <string>title</string> 
+       <string>Account Selector</string> 
+      </void> 
+      <void method="setProperty"> 
+       <string>defaultCloseOperation</string> 
+       <int>2</int> 
+      </void> 
+      <void method="setProperty"> 
+       <string>$sizePolicy</string> 
+       <int>1</int> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JComboBox</string> 
+        <void property="name"> 
+         <string>accountCombo</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>JavaCodeGenerator.postInitCode</string> 
+          <string>        accountCombo.setModel(new DefaultComboBoxModel(                 accountList         ));</string> 
+         </void> 
+        </void> 
+        <void method="addEvent"> 
+         <object class="com.jformdesigner.model.FormEvent"> 
+          <string>java.awt.event.ActionListener</string> 
+          <string>actionPerformed</string> 
+          <string>accountComboActionPerformed</string> 
+          <boolean>false</boolean> 
+         </object> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JCheckBox</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Member</string> 
+        </void> 
+        <void property="name"> 
+         <string>memberCheckBox</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JCheckBox</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Use Pin</string> 
+        </void> 
+        <void property="name"> 
+         <string>pinCheckBox</string> 
+        </void> 
+        <void method="addEvent"> 
+         <object class="com.jformdesigner.model.FormEvent"> 
+          <string>javax.swing.event.ChangeListener</string> 
+          <string>stateChanged</string> 
+          <string>pinCheckBoxStateChanged</string> 
+          <boolean>false</boolean> 
+         </object> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JTextField</string> 
+        <void method="setProperty"> 
+         <string>editable</string> 
+         <boolean>false</boolean> 
+        </void> 
+        <void property="name"> 
+         <string>pinField</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JCheckBox</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Lamp</string> 
+        </void> 
+        <void property="name"> 
+         <string>lampCheckBox</string> 
+        </void> 
+        <void method="addEvent"> 
+         <object class="com.jformdesigner.model.FormEvent"> 
+          <string>javax.swing.event.ChangeListener</string> 
+          <string>stateChanged</string> 
+          <string>lampCheckBoxStateChanged</string> 
+          <boolean>false</boolean> 
+         </object> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JComboBox</string> 
+        <void method="setProperty"> 
+         <string>model</string> 
+         <object class="javax.swing.DefaultComboBoxModel"> 
+          <void property="selectedItem"> 
+           <string>Attack</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Attack</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Strength</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Ranged</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Magic</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Defence</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Crafting</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Constitution</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Prayer</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Agility</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Herblore</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Thieving</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Fishing</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Runecraft</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Slayer</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Farming</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Mining</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Smithing</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Hunter</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Cooking</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Firemaking</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Woodcutting</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Fletching</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Construction</string> 
+          </void> 
+          <void method="addElement"> 
+           <string>Summoning</string> 
+          </void> 
+         </object> 
+        </void> 
+        <void method="setProperty"> 
+         <string>enabled</string> 
+         <boolean>false</boolean> 
+        </void> 
+        <void property="name"> 
+         <string>lampCombo</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>JavaCodeGenerator.postInitCode</string> 
+          <string>pinField.setDocument(new MaskedDocument(true));</string> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JButton</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Ok</string> 
+        </void> 
+        <void property="name"> 
+         <string>okButton</string> 
+        </void> 
+        <void method="addEvent"> 
+         <object class="com.jformdesigner.model.FormEvent"> 
+          <string>java.awt.event.ActionListener</string> 
+          <string>actionPerformed</string> 
+          <string>okButtonActionPerformed</string> 
+          <boolean>false</boolean> 
+         </object> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JButton</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>No Account</string> 
+        </void> 
+        <void property="name"> 
+         <string>cancelButton</string> 
+        </void> 
+        <void method="addEvent"> 
+         <object class="com.jformdesigner.model.FormEvent"> 
+          <string>java.awt.event.ActionListener</string> 
+          <string>actionPerformed</string> 
+          <string>cancelButtonActionPerformed</string> 
+          <boolean>false</boolean> 
+         </object> 
+        </void> 
+       </object> 
+      </void> 
+      <void property="name"> 
+       <string>this</string> 
+      </void> 
+     </object> 
+     <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+      <null/> 
+      <void method="setProperty"> 
+       <string>location</string> 
+       <object class="java.awt.Point"> 
+        <int>0</int> 
+        <int>0</int> 
+       </object> 
+      </void> 
+      <void method="setProperty"> 
+       <string>size</string> 
+       <object class="java.awt.Dimension"> 
+        <int>210</int> 
+        <int>195</int> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

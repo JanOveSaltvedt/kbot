@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_17" class="java.beans.XMLDecoder"> 
+ <object class="com.jformdesigner.model.FormModel"> 
+  <void property="contentType"> 
+   <string>form/swing</string> 
+  </void> 
+  <void property="root"> 
+   <object class="com.jformdesigner.model.FormRoot"> 
+    <void method="add"> 
+     <object class="com.jformdesigner.model.FormWindow"> 
+      <string>javax.swing.JFrame</string> 
+      <object class="com.jformdesigner.model.FormLayoutManager"> 
+       <class>org.jdesktop.layout.GroupLayout</class> 
+       <void method="setProperty"> 
+        <string>$horizontalGroup</string> 
+        <string>par l {seq {par l {seq l {space :::p, par t:::p {comp reflectButton::l:::x:1, comp myPosButton::l:::x:1, seq l {space :6:6:6, par l {seq l {comp label2:::p::p, space u:::p, comp ySpinner::::81:x}, seq l:::1 {comp label1:::p::p, space u:::p, comp xSpinner:::::x:1}}}}}, seq t {space :p:5:p, comp createMapButton::::132:x:1}}, space :::p}}</string> 
+       </void> 
+       <void method="setProperty"> 
+        <string>$verticalGroup</string> 
+        <string>par l {seq l {space :::p, comp myPosButton:::p::p, space :::p, par b {comp label1::b:p::p, comp xSpinner::b:p::p}, space :::p, par b {comp label2::b:p::p, comp ySpinner::b:p::p}, space u:::p, comp reflectButton:::p::p, space :::p, comp createMapButton:::p::p, space ::7:x}}</string> 
+       </void> 
+      </object> 
+      <void method="setProperty"> 
+       <string>defaultCloseOperation</string> 
+       <int>0</int> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JButton</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Set to current position</string> 
+        </void> 
+        <void property="name"> 
+         <string>myPosButton</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>JavaCodeGenerator.variableModifiers</string> 
+          <int>1</int> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JSpinner</string> 
+        <void property="name"> 
+         <string>xSpinner</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>JavaCodeGenerator.variableModifiers</string> 
+          <int>1</int> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JLabel</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>X pos:</string> 
+        </void> 
+        <void method="setProperty"> 
+         <string>icon</string> 
+         <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/> 
+        </void> 
+        <void method="setProperty"> 
+         <string>labelFor</string> 
+         <object class="com.jformdesigner.model.FormReference"> 
+          <string>xSpinner</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>label1</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JLabel</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Y pos:</string> 
+        </void> 
+        <void property="name"> 
+         <string>label2</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JSpinner</string> 
+        <void property="name"> 
+         <string>ySpinner</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>JavaCodeGenerator.variableModifiers</string> 
+          <int>1</int> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JButton</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Reflect</string> 
+        </void> 
+        <void property="name"> 
+         <string>reflectButton</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>JavaCodeGenerator.variableModifiers</string> 
+          <int>1</int> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JButton</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Create Map</string> 
+        </void> 
+        <void property="name"> 
+         <string>createMapButton</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>JavaCodeGenerator.variableModifiers</string> 
+          <int>1</int> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void property="name"> 
+       <string>this</string> 
+      </void> 
+     </object> 
+     <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+      <null/> 
+      <void method="setProperty"> 
+       <string>location</string> 
+       <object class="java.awt.Point"> 
+        <int>0</int> 
+        <int>0</int> 
+       </object> 
+      </void> 
+      <void method="setProperty"> 
+       <string>size</string> 
+       <object class="java.awt.Dimension"> 
+        <int>150</int> 
+        <int>185</int> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

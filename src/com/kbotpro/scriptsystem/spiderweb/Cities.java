@@ -1,0 +1,275 @@
+/*	
+	Copyright 2012 Jan Ove Saltvedt
+	
+	This file is part of KBot.
+
+    KBot is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    KBot is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with KBot.  If not, see <http://www.gnu.org/licenses/>.
+	
+*/
+
+package com.kbotpro.scriptsystem.spiderweb;
+
+import com.kbotpro.scriptsystem.wrappers.Tile;
+import java.util.ArrayList;
+
+/**
+ *
+ * @author Nader
+ */
+public class Cities {
+
+    private static ArrayList<City> cities = new ArrayList<City>();
+
+    /* Varrock*//////////////////////////////////////////////
+    // varrock tiles : could contain more, or perfectly plotted on Sumillions Util for path making.
+    public static final Tile[] varrock_city = new Tile[]{
+         new Tile(3176,3485),
+         new Tile(3175,3489),new Tile(3169,3495),new Tile(3162,3488),
+        new Tile(3245,3472),new Tile(3245,3473),new Tile(3245,3463),
+        new Tile(3213, 3425), new Tile(3219, 3428), new Tile(3226, 3429),
+        new Tile(3232, 3429), new Tile(3236, 3429), new Tile(3239, 3428),
+        new Tile(3244, 3427), new Tile(3245, 3429), new Tile(3250, 3428),
+        new Tile(3254, 3428), new Tile(3258, 3428), new Tile(3262, 3429),
+        new Tile(3266, 3429), new Tile(3265, 3432), new Tile(3265, 3436),
+        new Tile(3268, 3429), new Tile(3272, 3429), new Tile(3275, 3429),
+        new Tile(3278, 3429), new Tile(3282, 3429), new Tile(3217, 3424),
+        new Tile(3224, 3423), new Tile(3227, 3420), new Tile(3223, 3418),
+        new Tile(3227, 3414), new Tile(3233, 3416), new Tile(3238, 3419),
+        new Tile(3243, 3417), new Tile(3243, 3422), new Tile(3244, 3412),
+        new Tile(3243, 3407), new Tile(3243, 3403), new Tile(3239, 3401),
+        new Tile(3236, 3399), new Tile(3246, 3401), new Tile(3249, 3398),
+        new Tile(3250, 3393), new Tile(3248, 3389), new Tile(3240, 3389),
+        new Tile(3234, 3391), new Tile(3227, 3391), new Tile(3221, 3391),
+        new Tile(3216, 3391), new Tile(3211, 3390), new Tile(3211, 3397),
+        new Tile(3211, 3402), new Tile(3211, 3408), new Tile(3211, 3414),
+        new Tile(3211, 3420), new Tile(3208, 3425), new Tile(3204, 3428),
+        new Tile(3198, 3429), new Tile(3194, 3430), new Tile(3187, 3430),
+        new Tile(3181, 3430), new Tile(3177, 3428), new Tile(3171, 3428),
+        new Tile(3167, 3427), new Tile(3164, 3425), new Tile(3161, 3421),
+        new Tile(3157, 3419), new Tile(3151, 3418), new Tile(3144, 3417),
+        new Tile(3136, 3417), new Tile(3124, 3415), new Tile(3118, 3418),
+        new Tile(3115, 3420), new Tile(3109, 3421), new Tile(3112, 3416),
+        new Tile(3118, 3410), new Tile(3126, 3408), new Tile(3119, 3404),
+        new Tile(3127, 3400), new Tile(3133, 3406), new Tile(3135, 3410),
+        new Tile(3142, 3403), new Tile(3137, 3399), new Tile(3129, 3395),
+        new Tile(3142, 3394), new Tile(3149, 3395), new Tile(3151, 3399),
+        new Tile(3155, 3392), new Tile(3153, 3386), new Tile(3162, 3387),
+        new Tile(3167, 3392), new Tile(3162, 3400), new Tile(3156, 3402),
+        new Tile(3160, 3407), new Tile(3160, 3413), new Tile(3165, 3415),
+        new Tile(3166, 3419), new Tile(3169, 3413), new Tile(3170, 3404),
+        new Tile(3165, 3406), new Tile(3172, 3396), new Tile(3177, 3391),
+        new Tile(3174, 3387), new Tile(3169, 3387), new Tile(3177, 3381),
+        new Tile(3171, 3377), new Tile(3162, 3377), new Tile(3165, 3382),
+        new Tile(3157, 3380), new Tile(3159, 3375), new Tile(3160, 3368),
+        new Tile(3166, 3371), new Tile(3168, 3367), new Tile(3165, 3363),
+        new Tile(3172, 3363), new Tile(3178, 3361), new Tile(3184, 3364),
+        new Tile(3187, 3369), new Tile(3189, 3375), new Tile(3195, 3373),
+        new Tile(3200, 3375), new Tile(3192, 3367), new Tile(3203, 3365),
+        new Tile(3205, 3371), new Tile(3210, 3375), new Tile(3211, 3364),
+        new Tile(3205, 3360), new Tile(3204, 3356), new Tile(3204, 3351),
+        new Tile(3215, 3360), new Tile(3217, 3368), new Tile(3221, 3375),
+        new Tile(3223, 3364), new Tile(3228, 3371), new Tile(3234, 3375),
+        new Tile(3238, 3371), new Tile(3235, 3367), new Tile(3232, 3365),
+        new Tile(3239, 3364), new Tile(3245, 3367), new Tile(3248, 3371),
+        new Tile(3249, 3364), new Tile(3256, 3366), new Tile(3257, 3372),
+        new Tile(3264, 3364), new Tile(3267, 3369), new Tile(3271, 3360),
+        new Tile(3275, 3368), new Tile(3284, 3373), new Tile(3277, 3352),
+        new Tile(3275, 3348), new Tile(3274, 3343), new Tile(3281, 3342),
+        new Tile(3286, 3349), new Tile(3285, 3354), new Tile(3294, 3352),
+        new Tile(3292, 3345), new Tile(3298, 3339), new Tile(3308, 3342),
+        new Tile(3303, 3349), new Tile(3299, 3353), new Tile(3302, 3359),
+        new Tile(3297, 3362), new Tile(3297, 3371), new Tile(3292, 3375),
+        new Tile(3295, 3381), new Tile(3291, 3389), new Tile(3292, 3396),
+        new Tile(3291, 3406), new Tile(3289, 3413), new Tile(3281, 3413),
+        new Tile(3281, 3421), new Tile(3287, 3421), new Tile(3287, 3426),
+        new Tile(3280, 3425), new Tile(3289, 3431), new Tile(3285, 3435),
+        new Tile(3278, 3436), new Tile(3278, 3440), new Tile(3280, 3446),
+        new Tile(3283, 3446), new Tile(3290, 3446), new Tile(3288, 3441),
+        new Tile(3292, 3438), new Tile(3275, 3451), new Tile(3286, 3458),
+        new Tile(3286, 3453), new Tile(3278, 3459), new Tile(3295, 3458),
+        new Tile(3292, 3453), new Tile(3275, 3463), new Tile(3277, 3471),
+        new Tile(3283, 3474), new Tile(3280, 3478), new Tile(3273, 3478),
+        new Tile(3269, 3483), new Tile(3267, 3490), new Tile(3269, 3497),
+        new Tile(3258, 3499), new Tile(3259, 3506), new Tile(3267, 3505),
+        new Tile(3269, 3502), new Tile(3271, 3510), new Tile(3267, 3511),
+        new Tile(3259, 3511), new Tile(3251, 3512), new Tile(3250, 3505),
+        new Tile(3250, 3518), new Tile(3266, 3517), new Tile(3294, 3519),
+        new Tile(3278, 3517), new Tile(3289, 3515), new Tile(3291, 3508),
+        new Tile(3291, 3500), new Tile(3292, 3495), new Tile(3293, 3490),
+        new Tile(3293, 3485), new Tile(3286, 3483), new Tile(3288, 3478),
+        new Tile(3295, 3473), new Tile(3291, 3470), new Tile(3291, 3466),
+        new Tile(3298, 3463), new Tile(3307, 3467), new Tile(3310, 3471),
+        new Tile(3301, 3471), new Tile(3304, 3474), new Tile(3300, 3479),
+        new Tile(3295, 3480), new Tile(3303, 3489), new Tile(3306, 3484),
+        new Tile(3307, 3478), new Tile(3309, 3489), new Tile(3317, 3491),
+        new Tile(3321, 3493), new Tile(3303, 3460), new Tile(3309, 3463),
+        new Tile(3314, 3466), new Tile(3272, 3474), new Tile(3266, 3476),
+        new Tile(3212, 3434), new Tile(3213, 3439), new Tile(3213, 3446),
+        new Tile(3213, 3451), new Tile(3212, 3455), new Tile(3209, 3455),
+        new Tile(3206, 3452), new Tile(3207, 3445), new Tile(3202, 3450),
+        new Tile(3198, 3453), new Tile(3197, 3457), new Tile(3197, 3459),
+        new Tile(3192, 3461), new Tile(3196, 3467), new Tile(3196, 3475),
+        new Tile(3192, 3478), new Tile(3196, 3479), new Tile(3196, 3487),
+        new Tile(3193, 3490), new Tile(3197, 3492), new Tile(3194, 3498),
+        new Tile(3198, 3501), new Tile(3204, 3502), new Tile(3206, 3502),
+        new Tile(3209, 3500), new Tile(3214, 3500), new Tile(3216, 3502),
+        new Tile(3226, 3498), new Tile(3228, 3495), new Tile(3229, 3465),
+        new Tile(3227, 3461), new Tile(3224, 3452), new Tile(3220, 3462),
+        new Tile(3214, 3462), new Tile(3221, 3452), new Tile(3220, 3446),
+        new Tile(3222, 3434), new Tile(3225, 3438), new Tile(3235, 3444),
+        new Tile(3238, 3440), new Tile(3241, 3433), new Tile(3246, 3435),
+        new Tile(3245, 3441), new Tile(3246, 3448), new Tile(3249, 3449),
+        new Tile(3245, 3452), new Tile(3244, 3458), new Tile(3241, 3459),
+        new Tile(3244, 3463), new Tile(3240, 3465), new Tile(3246, 3468),
+        new Tile(3245, 3473), new Tile(3246, 3479), new Tile(3245, 3484),
+        new Tile(3244, 3487), new Tile(3245, 3492), new Tile(3245, 3497),
+        new Tile(3246, 3502), new Tile(3243, 3505), new Tile(3239, 3505),
+        new Tile(3237, 3512), new Tile(3243, 3511), new Tile(3243, 3515),
+        new Tile(3229, 3518), new Tile(3232, 3512), new Tile(3226, 3511),
+        new Tile(3223, 3517), new Tile(3219, 3518), new Tile(3217, 3512),
+        new Tile(3212, 3512), new Tile(3208, 3517), new Tile(3204, 3517),
+        new Tile(3206, 3512), new Tile(3199, 3517), new Tile(3219, 3500),
+        new Tile(3222, 3500), new Tile(3218, 3515), new Tile(3210, 3515),
+        new Tile(3224, 3514), new Tile(3236, 3517), new Tile(3235, 3510),
+        new Tile(3248, 3455), new Tile(3252, 3457), new Tile(3256, 3457),
+        new Tile(3261, 3457), new Tile(3262, 3461), new Tile(3261, 3463),
+        new Tile(3266, 3461), new Tile(3265, 3458), new Tile(3261, 3466),
+        new Tile(3253, 3468), new Tile(3250, 3440), new Tile(3256, 3440),
+        new Tile(3261, 3439), new Tile(3260, 3433), new Tile(3264, 3427),
+        new Tile(3264, 3423), new Tile(3264, 3421), new Tile(3268, 3419),
+        new Tile(3263, 3418), new Tile(3264, 3416), new Tile(3269, 3414),
+        new Tile(3267, 3411), new Tile(3261, 3413), new Tile(3258, 3409),
+        new Tile(3258, 3406), new Tile(3259, 3412), new Tile(3264, 3413),
+        new Tile(3268, 3412), new Tile(3266, 3415), new Tile(3265, 3419),
+        new Tile(3258, 3404), new Tile(3257, 3402), new Tile(3256, 3399),
+        new Tile(3255, 3398), new Tile(3251, 3395), new Tile(3252, 3390),
+        new Tile(3254, 3412), new Tile(3257, 3412), new Tile(3251, 3412),
+        new Tile(3247, 3412), new Tile(3234, 3402), new Tile(3234, 3405),
+        new Tile(3235, 3400), new Tile(3234, 3409), new Tile(3232, 3412),
+        new Tile(3223, 3414), new Tile(3221, 3410), new Tile(3217, 3409),
+        new Tile(3170, 3422), new Tile(3179, 3426), new Tile(3182, 3424),
+        new Tile(3180, 3421), new Tile(3181, 3418), new Tile(3180, 3416),
+        new Tile(3177, 3415), new Tile(3178, 3413), new Tile(3179, 3411),
+        new Tile(3178, 3409), new Tile(3179, 3405), new Tile(3183, 3404),
+        new Tile(3186, 3402), new Tile(3186, 3400), new Tile(3191, 3401),
+        new Tile(3190, 3404), new Tile(3191, 3408), new Tile(3191, 3412),
+        new Tile(3192, 3418), new Tile(3196, 3418), new Tile(3198, 3424),
+        new Tile(3199, 3419), new Tile(3200, 3414), new Tile(3199, 3411),
+        new Tile(3197, 3421), new Tile(3199, 3421), new Tile(3200, 3408),
+        new Tile(3196, 3408), new Tile(3202, 3406), new Tile(3199, 3402),
+        new Tile(3195, 3400), new Tile(3205, 3406), new Tile(3210, 3378),
+        new Tile(3211, 3383), new Tile(3205, 3393), new Tile(3201, 3392),
+        new Tile(3199, 3390), new Tile(3198, 3387), new Tile(3199, 3385),
+        new Tile(3202, 3374), new Tile(3197, 3366), new Tile(3273, 3356),
+        new Tile(3275, 3354), new Tile(3273, 3364), new Tile(3279, 3371),
+        new Tile(3288, 3374), new Tile(3298, 3347), new Tile(3271, 3342),
+        new Tile(3263, 3341), new Tile(3267, 3340), new Tile(3258, 3341),
+        new Tile(3256, 3342), new Tile(3253, 3342), new Tile(3249, 3340),
+        new Tile(3248, 3339), new Tile(3246, 3338), new Tile(3243, 3337),
+        new Tile(3240, 3337), new Tile(3238, 3337), new Tile(3236, 3337),
+        new Tile(3233, 3337), new Tile(3230, 3337), new Tile(3228, 3339),
+        new Tile(3227, 3341), new Tile(3225, 3345), new Tile(3225, 3348),
+        new Tile(3225, 3351), new Tile(3226, 3355), new Tile(3222, 3359),
+        new Tile(3228, 3361), new Tile(3272, 3338), new Tile(3273, 3335),
+        new Tile(3263, 3335), new Tile(3266, 3335), new Tile(3270, 3335),
+        new Tile(3261, 3335), new Tile(3258, 3335), new Tile(3254, 3335),
+        new Tile(3251, 3336), new Tile(3276, 3335), new Tile(3279, 3337),
+        new Tile(3283, 3335), new Tile(3284, 3336), new Tile(3288, 3335),
+        new Tile(3291, 3335), new Tile(3296, 3335), new Tile(3290, 3339),
+        new Tile(3302, 3336), new Tile(3308, 3336), new Tile(3307, 3355),
+        new Tile(3225, 3373), new Tile(3216, 3375), new Tile(3208, 3433),
+        new Tile(3207, 3436), new Tile(3205, 3439), new Tile(3203, 3440),
+        new Tile(3202, 3440), new Tile(3199, 3439), new Tile(3197, 3437),
+        new Tile(3196, 3434), new Tile(3197, 3441), new Tile(3196, 3443),
+        new Tile(3196, 3445), new Tile(3195, 3448), new Tile(3192, 3450),
+        new Tile(3190, 3450), new Tile(3188, 3452), new Tile(3186, 3453),
+        new Tile(3182, 3453), new Tile(3179, 3456), new Tile(3180, 3460),
+        new Tile(3178, 3462), new Tile(3177, 3458), new Tile(3175, 3455),
+        new Tile(3177, 3452), new Tile(3178, 3451), new Tile(3174, 3450),
+        new Tile(3170, 3453), new Tile(3167, 3459), new Tile(3161, 3459),
+        new Tile(3159, 3456), new Tile(3162, 3453), new Tile(3157, 3449),
+        new Tile(3152, 3447), new Tile(3149, 3446), new Tile(3150, 3458),
+        new Tile(3154, 3454), new Tile(3152, 3453), new Tile(3157, 3459),
+        new Tile(3156, 3464), new Tile(3150, 3462), new Tile(3164, 3465),
+        new Tile(3166, 3453), new Tile(3166, 3447), new Tile(3164, 3444),
+        new Tile(3171, 3439), new Tile(3170, 3434), new Tile(3168, 3435),
+        new Tile(3174, 3432), new Tile(3175, 3440), new Tile(3173, 3445),
+        new Tile(3181, 3449), new Tile(3144, 3457), new Tile(3147, 3460),
+        new Tile(3140, 3456), new Tile(3138, 3456), new Tile(3135, 3457),
+        new Tile(3130, 3458), new Tile(3124, 3459), new Tile(3120, 3456),
+        new Tile(3109, 3457), new Tile(3108, 3450), new Tile(3118, 3443),
+        new Tile(3128, 3447), new Tile(3132, 3445), new Tile(3125, 3439),
+        new Tile(3120, 3436), new Tile(3124, 3429), new Tile(3131, 3428),
+        new Tile(3131, 3423), new Tile(3125, 3422), new Tile(3118, 3426),
+        new Tile(3140, 3425), new Tile(3142, 3432), new Tile(3137, 3435),
+        new Tile(3139, 3441), new Tile(3144, 3438), new Tile(3145, 3427),
+        new Tile(3147, 3422), new Tile(3136, 3425), new Tile(3134, 3425),
+        new Tile(3126, 3426), new Tile(3134, 3460), new Tile(3163, 3468),
+        new Tile(3161, 3471), new Tile(3158, 3471), new Tile(3154, 3473),
+        new Tile(3146, 3473), new Tile(3145, 3473), new Tile(3142, 3478),
+        new Tile(3146, 3478), new Tile(3143, 3483), new Tile(3143, 3488),
+        new Tile(3142, 3493), new Tile(3141, 3498), new Tile(3142, 3500),
+        new Tile(3142, 3506), new Tile(3145, 3508), new Tile(3151, 3512),
+        new Tile(3158, 3511), new Tile(3164, 3511), new Tile(3181, 3513),
+        new Tile(3173, 3513), new Tile(3175, 3508), new Tile(3181, 3509),
+        new Tile(3188, 3510), new Tile(3193, 3506), new Tile(3189, 3505),
+        new Tile(3187, 3500), new Tile(3187, 3494), new Tile(3186, 3490),
+        new Tile(3189, 3488), new Tile(3185, 3483), new Tile(3186, 3480),
+        new Tile(3182, 3476), new Tile(3184, 3478), new Tile(3185, 3480),
+        new Tile(3187, 3486), new Tile(3179, 3473), new Tile(3176, 3472),
+        new Tile(3175, 3471), new Tile(3171, 3471), new Tile(3167, 3470),
+        new Tile(3167, 3473), new Tile(3172, 3477), new Tile(3174, 3482),
+        new Tile(3178, 3486), new Tile(3179, 3493), new Tile(3173, 3499),
+        new Tile(3163, 3504), new Tile(3154, 3499), new Tile(3149, 3492),
+        new Tile(3152, 3480), new Tile(3163, 3481), new Tile(3137, 3517),
+        new Tile(3140, 3520), new Tile(3144, 3520), new Tile(3147, 3520),
+        new Tile(3151, 3520), new Tile(3153, 3520), new Tile(3156, 3520),
+        new Tile(3160, 3520), new Tile(3163, 3520), new Tile(3169, 3520),
+        new Tile(3173, 3520), new Tile(3178, 3520), new Tile(3188, 3519),
+        new Tile(3193, 3521), new Tile(3183, 3519), new Tile(3196, 3519),
+        new Tile(3197, 3515), new Tile(3199, 3513), new Tile(3193, 3519),
+        new Tile(3272, 3469), new Tile(3276, 3445), new Tile(3168, 3374),
+        new Tile(3279, 3333), new Tile(3282, 3333), new Tile(3251, 3377), new Tile(3262, 3374),
+        new Tile(3258, 3362), new Tile(3245, 3361),
+        new Tile(3270, 3372)
+    };
+    public static final Tile[] varrock_bounds = new Tile[]{
+        new Tile(3133, 3520), new Tile(3128, 3498), new Tile(3114, 3490),
+        new Tile(3103, 3469), new Tile(3105, 3448), new Tile(3113, 3435),
+        new Tile(3107, 3423), new Tile(3112, 3402), new Tile(3123, 3392),
+        new Tile(3141, 3390), new Tile(3149, 3386), new Tile(3154, 3362),
+        new Tile(3162, 3353), new Tile(3176, 3358), new Tile(3186, 3348),
+        new Tile(3203, 3341), new Tile(3233, 3331), new Tile(3238, 3335),
+        new Tile(3247, 3334), new Tile(3253, 3329), new Tile(3266, 3330),
+        new Tile(3279, 3330), new Tile(3311, 3329), new Tile(3311, 3359),
+        new Tile(3304, 3360), new Tile(3304, 3364), new Tile(3303, 3383),
+        new Tile(3296, 3385), new Tile(3296, 3454), new Tile(3298, 3456),
+        new Tile(3311, 3457), new Tile(3318, 3464), new Tile(3319, 3471),
+        new Tile(3312, 3476), new Tile(3312, 3487), new Tile(3328, 3489),
+        new Tile(3329, 3522), new Tile(3234, 3521), new Tile(3133, 3520)
+    };
+//////////////////////////////////////////////////////////////////////////////////////
+
+    /**
+     *
+     * @return the cached cities
+     */
+    public static ArrayList<City> getCities() {
+        //Caching
+        if (cities == null || cities.isEmpty()) {
+            cities.add(new City(varrock_city, varrock_bounds));
+        }
+        return cities;
+    }
+}
